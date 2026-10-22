@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://vukuzenzele.replit.app/sitemap.xml
+Disallow: /deploy.php
+
+Sitemap: https://vukuzenzele.co.zw/sitemap.xml
