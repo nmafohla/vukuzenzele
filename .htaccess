@@ -10,6 +10,10 @@ AddDefaultCharset UTF-8
   RewriteCond %{HTTP:X-Forwarded-Proto} !=https
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+  # Send www to the apex domain (matches the canonical URL).
+  RewriteCond %{HTTP_HOST} ^www\.vukuzenzele\.co\.zw$ [NC]
+  RewriteRule ^ https://vukuzenzele.co.zw%{REQUEST_URI} [L,R=301]
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
   RewriteRule ^ index.html [QSA,L]
