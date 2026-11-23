@@ -1,103 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Vukuzenzele Granite Design | Architectural Stone Fabrication Zimbabwe</title>
+  <meta name="description" content="Vukuzenzele Granite Design fabricates and installs Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces across Zimbabwe. Over 20 years of craftsmanship.">
+  <link rel="icon" type="image/png" href="assets/images/icon_vg.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
 
-    <!-- Primary SEO -->
-    <title>Vukuzenzele Granite Design | Premium Stone Fabrication, Bulawayo Zimbabwe</title>
-    <meta name="description" content="Vukuzenzele Granite Design fabricates and installs premium granite, quartz, marble and engineered stone surfaces across Zimbabwe. Kitchen countertops, bathroom vanities, staircases and more. Est. 2003." />
-    <meta name="robots" content="index, follow" />
-    <meta name="keywords" content="granite countertops Bulawayo, quartz countertops Zimbabwe, stone fabrication Bulawayo, kitchen countertops, bathroom vanities, marble surfaces, Vukuzenzele Granite" />
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Vukuzenzele Granite Design Home">
+        <div class="logo-plaque">
+          <img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Granite Design Logo" width="46" height="46">
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">VUKUZENZELE</span>
+          <span class="brand-tagline">Granite Design</span>
+        </div>
+      </a>
 
-    <!-- Open Graph (WhatsApp, Facebook) -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Vukuzenzele Granite Design" />
-    <meta property="og:title" content="Vukuzenzele Granite Design | Premium Stone Fabrication, Bulawayo Zimbabwe" />
-    <meta property="og:description" content="Premium granite, quartz and marble surfaces fabricated and installed across Bulawayo, Zimbabwe. Over 20 years of excellence. Est. 2003." />
-    <meta property="og:image" content="https://vukuzenzele.co.zw/og-image.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content="https://vukuzenzele.co.zw/" />
-    <meta property="og:locale" content="en_ZW" />
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Vukuzenzele Granite Design | Premium Stone Fabrication, Bulawayo Zimbabwe" />
-    <meta name="twitter:description" content="Premium granite, quartz and marble surfaces fabricated and installed across Bulawayo, Zimbabwe. Over 20 years of excellence." />
-    <meta name="twitter:image" content="https://vukuzenzele.co.zw/og-image.jpg" />
+      <a href="estimator.html" class="btn btn-outline-gold d-none-mobile">Request a Quote</a>
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://vukuzenzele.co.zw/" />
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <!-- LocalBusiness structured data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Vukuzenzele Granite Design",
-      "alternateName": "Mabutho Home Improvement",
-      "description": "Premium stone fabrication and installation — granite, quartz, marble, Caesarstone, Neolith and Dekton surfaces for kitchens, bathrooms, staircases and more. Serving Zimbabwe since 2003.",
-      "url": "https://vukuzenzele.co.zw/",
-      "logo": "https://vukuzenzele.co.zw/og-image.jpg",
-      "image": "https://vukuzenzele.co.zw/og-image.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bulawayo",
-        "addressRegion": "Bulawayo",
-        "addressCountry": "ZW"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -20.1500,
-        "longitude": 28.5833
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "Zimbabwe"
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "08:00",
-          "closes": "17:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": "Saturday",
-          "opens": "08:00",
-          "closes": "13:00"
-        }
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Stone Fabrication Services",
-        "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kitchen Countertops" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Vanities" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Staircase Treads" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fireplace Surrounds" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Wall Cladding" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Surfaces" } }
-        ]
-      },
-      "foundingDate": "2003",
-      "priceRange": "$$"
-    }
-    </script>
+  <dialog class="Drawer" id="drawer" aria-label="Navigation menu">
+    <div class="Drawer-scroller">
+      <nav class="Drawer-sheet" aria-label="Mobile Navigation">
+        <div class="Drawer-header">
+          <span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span>
+          <button class="Drawer-close" id="drawer-close" type="button" aria-label="Close menu" autofocus>&times;</button>
+        </div>
+        <ul class="Drawer-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:24px;">
+          <a href="estimator.html" class="btn btn-primary" style="width:100%;">Request a Quote</a>
+        </div>
+      </nav>
+    </div>
+  </dialog>
 
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-CgnPtQa5.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-dUc3Qfr3.css">
-      <!-- Audit 9 Nov 2026: stop slide-in animations widening the page on mobile -->
-    <style>#root{overflow-x:clip}</style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="https://chat.hakili.online/widget.js" data-bot="vukuzenzele" data-offset="96" defer></script>
-  </body>
+  <main>
+    <!-- Split-Slab Architectural Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Est. 2003 &bull; Zimbabwe Stone Atelier</div>
+            <h1>Stone that <em>defines</em> spaces.</h1>
+            <p class="hero-lead">
+              Precision fabrication and installation of Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces for homes, kitchens, and commercial developments across Zimbabwe.
+            </p>
+            <div class="hero-actions">
+              <a href="estimator.html" class="btn btn-primary">Request a Quote <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="portfolio.html" class="btn btn-secondary">View Our Work</a>
+            </div>
+          </div>
+
+          <div class="hero-frame">
+            <img src="assets/images/media__1785265094003.jpg" alt="Bookmatched Calacatta marble feature wall installation" fetchpriority="high" width="600" height="750">
+            <div class="specimen-badge">
+              <div>
+                <span>Featured Specimen</span>
+                <strong>Calacatta Gold Bookmatched</strong>
+              </div>
+              <a href="portfolio.html" class="btn btn-outline-gold" style="min-height:40px; padding:8px 14px; font-size:0.78rem;">Inspect</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Monumental Metrics -->
+    <section class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3>20+</h3>
+            <p>Years Craftsmanship</p>
+          </div>
+          <div class="stat-item">
+            <h3>1,000+</h3>
+            <p>Installations Completed</p>
+          </div>
+          <div class="stat-item">
+            <h3>6</h3>
+            <p>Stone Systems</p>
+          </div>
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>A-Grade Slabs</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Material Specimen Explorer -->
+    <section class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Materials We Master</div>
+          <h2>Crafted from nature&rsquo;s finest slabs.</h2>
+          <p>Compare our core architectural surfaces to choose the right balance of heat resistance, veining, and daily durability.</p>
+        </div>
+
+        <div class="specimen-tabs" role="tablist" aria-label="Stone material categories">
+          <button class="specimen-tab active" role="tab" aria-selected="true" data-specimen="quartz" type="button">Quartz &amp; Caesarstone</button>
+          <button class="specimen-tab" role="tab" aria-selected="false" data-specimen="granite" type="button">Granite</button>
+          <button class="specimen-tab" role="tab" aria-selected="false" data-specimen="marble" type="button">Marble</button>
+          <button class="specimen-tab" role="tab" aria-selected="false" data-specimen="dekton" type="button">Dekton &amp; Neolith</button>
+        </div>
+
+        <div class="specimen-panel">
+          <div class="specimen-media">
+            <img id="specimen-img" src="assets/images/media__1785265112054.jpg" alt="Quartz & Caesarstone" loading="lazy">
+          </div>
+          <div>
+            <h3 id="specimen-title" style="font-size:clamp(1.75rem, 3vw, 2.3rem); margin-bottom:12px;">Quartz &amp; Caesarstone</h3>
+            <p id="specimen-desc" style="color:var(--slate-muted);">Engineered architectural stone with 0% porosity and effortless daily care.</p>
+            <div class="specimen-specs">
+              <div class="spec-cell">
+                <span>Porosity</span>
+                <strong id="specimen-porosity">Non-Porous (0%)</strong>
+              </div>
+              <div class="spec-cell">
+                <span>Heat Rating</span>
+                <strong id="specimen-heat">Up to 150&deg;C</strong>
+              </div>
+              <div class="spec-cell">
+                <span>Ideal Use</span>
+                <strong id="specimen-best">Kitchen Islands &amp; Tops</strong>
+              </div>
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <a href="estimator.html" class="btn btn-primary">Estimate This Material</a>
+              <a href="materials.html" class="btn btn-secondary">Full Material Guide</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shared Workshop Partnership (Vukuzenzele × MHI) -->
+    <section class="section section-alt reveal-on-scroll">
+      <div class="container">
+        <div class="partnership-card">
+          <div>
+            <div class="eyebrow">The Shared Workshop Advantage</div>
+            <h2 style="font-size:clamp(1.9rem, 3.5vw, 2.6rem); margin-bottom:16px;">Vukuzenzele &times; Mabutho Home Improvement</h2>
+            <p style="color:var(--slate-muted); margin-bottom:22px;">
+              We share a workshop with <strong>Mabutho Home Improvement (MHI, Est. 2003)</strong>. MHI builds and fits the custom cabinetry first, then our masonry team immediately templates and installs the stone worktops &mdash; eliminating trade delays and alignment gaps.
+            </p>
+            <a href="contact.html" class="btn btn-outline-gold">Book Joint Consultation</a>
+          </div>
+          <div class="partner-logos">
+            <div class="partner-logo-box">
+              <img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Granite Design" loading="lazy">
+            </div>
+            <div class="partner-logo-box">
+              <img src="assets/images/logo_mhi.png" alt="Mabutho Home Improvement (MHI)" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:48px;">
+          <div class="text-center" style="margin-bottom:24px;">
+            <span class="eyebrow">Drag To Compare</span>
+            <h3 style="font-size:clamp(1.5rem, 3vw, 2rem);">From MHI Cabinetry to Finished Calacatta Top</h3>
+          </div>
+          <div class="before-after-container">
+            <div class="slider-img before-img">
+              <img src="assets/images/media__1785265112057.jpg" alt="MHI cabinets fitted before stone" loading="lazy">
+              <div class="slider-label before-label">Before: MHI Cabinets</div>
+            </div>
+            <div class="slider-img after-img">
+              <img src="assets/images/media__1785265112058.jpg" alt="Calacatta marble countertop finished" loading="lazy">
+              <div class="slider-label after-label">After: Vukuzenzele Stone</div>
+            </div>
+            <div class="slider-bar"></div>
+            <div class="slider-handle" role="slider" aria-label="Drag to compare before and after installation" tabindex="0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Installations -->
+    <section class="section reveal-on-scroll">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Recent Installations</div>
+          <h2>Our Craft in Detail</h2>
+          <p>Precision mitred aprons, bookmatched slabs, and seamless undermount cutouts across residential and commercial spaces.</p>
+        </div>
+
+        <div class="showcase-grid">
+          <a href="portfolio.html" class="showcase-card">
+            <img src="assets/images/media__1785265093997.jpg" alt="Slate-Wood Quartz Island" class="showcase-img" loading="lazy">
+            <div class="showcase-overlay">
+              <h3>Slate-Wood Kitchen Island</h3>
+              <p>Veined quartz over oak slats with cantilevered bar</p>
+            </div>
+          </a>
+          <a href="portfolio.html" class="showcase-card">
+            <img src="assets/images/media__1785265128736.jpg" alt="Bespoke Boardroom Table" class="showcase-img" loading="lazy">
+            <div class="showcase-overlay">
+              <h3>Executive Boardroom Desk</h3>
+              <p>Bookmatched stone top with curved timber joinery</p>
+            </div>
+          </a>
+          <a href="portfolio.html" class="showcase-card">
+            <img src="assets/images/media__1785265093995.jpg" alt="Marble Vanity Tops" class="showcase-img" loading="lazy">
+            <div class="showcase-overlay">
+              <h3>Double Basin Marble Vanity</h3>
+              <p>Polished undermount cutouts in veined white marble</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center" style="margin-top:40px;">
+          <a href="portfolio.html" class="btn btn-secondary">View Full Gallery <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section section-alt text-center">
+      <div class="container">
+        <div class="eyebrow">Start Your Project</div>
+        <h2 style="font-size:clamp(2.1rem, 4.5vw, 3.2rem); margin-bottom:18px;">Ready to elevate your space?</h2>
+        <p style="color:var(--slate-muted); max-width:600px; margin:0 auto 32px;">
+          Calculate an instant estimate online or speak directly with Sales &amp; Marketing Director Derek Umphile Mafohla to arrange site measurements.
+        </p>
+        <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap;">
+          <a href="estimator.html" class="btn btn-primary">Calculate Countertop Price</a>
+          <a href="tel:0771810583" class="btn btn-secondary"><i class="fa-solid fa-phone"></i> 0771 810 583</a>
+          <a href="https://wa.me/263771810583" target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold"><i class="fa-brands fa-whatsapp"></i> WhatsApp Sales</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrapper">
+            <div class="logo-plaque" style="width:40px; height:40px;">
+              <img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" loading="lazy">
+            </div>
+            <span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span>
+          </a>
+          <p>Zimbabwe&rsquo;s premier stone fabricator for Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/263771810583" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="portfolio.html">Kitchen Countertops</a></li>
+            <li><a href="portfolio.html">Bathroom Vanities</a></li>
+            <li><a href="portfolio.html">Feature Wall Cladding</a></li>
+            <li><a href="portfolio.html">MHI Joint Cabinetry</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Materials</h4>
+          <ul>
+            <li><a href="materials.html">Quartz &amp; Caesarstone</a></li>
+            <li><a href="materials.html">Zimbabwean Granite</a></li>
+            <li><a href="materials.html">Imported Marble</a></li>
+            <li><a href="materials.html">Dekton &amp; Neolith</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p style="color:var(--slate-muted); font-size:0.88rem; margin-bottom:10px;">Vukuzenzele &amp; MHI Workshop<br>Zimbabwe</p>
+          <p style="font-size:0.88rem; margin-bottom:8px;"><a href="tel:0771810583"><i class="fa-solid fa-phone text-brass" style="margin-right:8px;"></i>0771 810 583</a></p>
+          <p style="font-size:0.88rem;"><a href="mailto:info@vukuzenzele.co.zw"><i class="fa-solid fa-envelope text-brass" style="margin-right:8px;"></i>info@vukuzenzele.co.zw</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vukuzenzele Granite Design &bull; Partnered with Mabutho Home Improvement (MHI)</p>
+        <p>Built by <a href="https://hakili.co.zw" target="_blank" rel="noopener noreferrer">hakili.co.zw</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat-theme.js" defer></script>
+  <script src="https://chat.hakili.online/widget.js" data-bot="vukuzenzele" defer></script>
+</body>
 </html>

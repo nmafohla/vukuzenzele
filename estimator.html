@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Price Estimator | Vukuzenzele Granite Design</title>
+  <meta name="description" content="Calculate instant countertop estimates for Granite, Quartz, Marble, or Dekton and send specifications directly on WhatsApp.">
+  <link rel="icon" type="image/png" href="assets/images/icon_vg.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Vukuzenzele Granite Design Home">
+        <div class="logo-plaque"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" width="46" height="46"></div>
+        <div class="logo-text"><span class="brand-name">VUKUZENZELE</span><span class="brand-tagline">Granite Design</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html" class="active">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="estimator.html" class="btn btn-outline-gold d-none-mobile">Request a Quote</a>
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer" type="button"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <dialog class="Drawer" id="drawer" aria-label="Navigation menu">
+    <div class="Drawer-scroller">
+      <nav class="Drawer-sheet" aria-label="Mobile Navigation">
+        <div class="Drawer-header">
+          <span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span>
+          <button class="Drawer-close" id="drawer-close" type="button" aria-label="Close menu" autofocus>&times;</button>
+        </div>
+        <ul class="Drawer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html" class="active">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:24px;"><a href="contact.html" class="btn btn-primary" style="width:100%;">Speak With Sales</a></div>
+      </nav>
+    </div>
+  </dialog>
+
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + env(safe-area-inset-top, 0px) + 48px); padding-bottom:36px;">
+      <div class="container text-center">
+        <div class="eyebrow">Instant Quote Tool</div>
+        <h1 style="font-size:clamp(2.4rem, 4.5vw, 3.6rem); margin-bottom:16px;">Countertop Price Estimator</h1>
+        <p style="color:var(--slate-muted); max-width:600px; margin:0 auto;">Configure your slab material, dimensions, and edge profile to get an instant budget range, then send your spec directly via WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="estimator-layout">
+          <div class="calculator-wizard" id="estimator-wizard">
+            <div class="step-indicator">
+              <span class="indicator-item active">1. Material</span>
+              <span class="indicator-item">2. Dimensions</span>
+              <span class="indicator-item">3. Edge &amp; Cutouts</span>
+              <span class="indicator-item">4. Send Spec</span>
+            </div>
+
+            <div class="calc-step active">
+              <h3 style="font-size:1.6rem; margin-bottom:20px;">Select Stone Material</h3>
+              <div class="form-grid-options">
+                <div class="option-card selected" data-type="material" data-value="quartz" role="button" tabindex="0"><h4>Quartz</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Non-porous engineered</p></div>
+                <div class="option-card" data-type="material" data-value="granite" role="button" tabindex="0"><h4>Granite</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Heat proof natural</p></div>
+                <div class="option-card" data-type="material" data-value="marble" role="button" tabindex="0"><h4>Marble</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Luxury veined stone</p></div>
+                <div class="option-card" data-type="material" data-value="dekton" role="button" tabindex="0"><h4>Dekton / Neolith</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Sintered ultracompact</p></div>
+              </div>
+            </div>
+
+            <div class="calc-step">
+              <h3 style="font-size:1.6rem; margin-bottom:20px;">Countertop Dimensions</h3>
+              <div class="input-row">
+                <div class="form-group"><label for="calc-length">Total Length (m)</label><input type="number" id="calc-length" class="form-control" value="3.0" step="0.1" min="0.5" max="30" inputmode="decimal"></div>
+                <div class="form-group"><label for="calc-width">Depth / Width (m)</label><input type="number" id="calc-width" class="form-control" value="0.6" step="0.1" min="0.2" max="2.0" inputmode="decimal"></div>
+              </div>
+            </div>
+
+            <div class="calc-step">
+              <h3 style="font-size:1.6rem; margin-bottom:20px;">Edge Profile &amp; Cutouts</h3>
+              <div class="form-grid-options" style="margin-bottom:24px;">
+                <div class="option-card selected" data-type="edge" data-value="square" role="button" tabindex="0"><h4>Square Edge</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Standard flat polish</p></div>
+                <div class="option-card" data-type="edge" data-value="bullnose" role="button" tabindex="0"><h4>Full Bullnose</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Rounded profile</p></div>
+                <div class="option-card" data-type="edge" data-value="mitered" role="button" tabindex="0"><h4>Mitered Drop</h4><p style="font-size:0.8rem; color:var(--slate-muted);">Double-slab apron</p></div>
+              </div>
+              <div class="input-row">
+                <div class="form-group"><label for="calc-cutouts">Sink / Hob Cutouts</label><input type="number" id="calc-cutouts" class="form-control" value="1" min="0" max="6" inputmode="numeric"></div>
+                <div class="form-group" style="display:flex; align-items:center; padding-top:22px;">
+                  <label style="display:flex; align-items:center; gap:10px; cursor:pointer; margin:0;"><input type="checkbox" id="calc-appliances" style="width:20px; height:20px; accent-color:var(--brass);"><span>Include MHI Carpentry / Appliances</span></label>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc-step">
+              <h3 style="font-size:1.6rem; margin-bottom:14px;">Configuration Ready</h3>
+              <p style="color:var(--slate-muted); margin-bottom:20px;">Send your live estimate directly to Derek Umphile Mafohla on WhatsApp to confirm slab stock and book site templating.</p>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-secondary" id="prev-btn">Back</button>
+              <button type="button" class="btn btn-primary" id="next-btn">Continue</button>
+            </div>
+          </div>
+
+          <aside class="estimator-result-panel">
+            <h3 style="font-size:1.6rem; margin-bottom:16px;">Live Estimate</h3>
+            <div class="price-estimate-box">
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.14em; color:var(--slate-muted); margin-bottom:6px;">Estimated Range (USD)</div>
+              <div class="price-range"><span id="res-min-price">$0</span> &ndash; <span id="res-max-price">$0</span></div>
+            </div>
+            <ul class="summary-list">
+              <li><span style="color:var(--slate-muted);">Material</span><span id="res-material">-</span></li>
+              <li><span style="color:var(--slate-muted);">Dimensions</span><span id="res-dimensions">-</span></li>
+              <li><span style="color:var(--slate-muted);">Edge Profile</span><span id="res-edge">-</span></li>
+              <li><span style="color:var(--slate-muted);">Additions</span><span id="res-cutouts">-</span></li>
+              <li><span style="color:var(--slate-muted);">Lead Time</span><span id="res-time">-</span></li>
+            </ul>
+            <p style="font-size:0.8rem; color:var(--slate-dim);">Includes templating, fabrication, standard polishing, and installation.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrapper"><div class="logo-plaque" style="width:40px; height:40px;"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" loading="lazy"></div><span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span></a>
+          <p>Zimbabwe&rsquo;s premier stone fabricator for Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces.</p>
+        </div>
+        <div class="footer-column"><h4>Services</h4><ul><li><a href="portfolio.html">Kitchen Countertops</a></li><li><a href="portfolio.html">Bathroom Vanities</a></li><li><a href="portfolio.html">Feature Cladding</a></li></ul></div>
+        <div class="footer-column"><h4>Materials</h4><ul><li><a href="materials.html">Quartz &amp; Caesarstone</a></li><li><a href="materials.html">Zimbabwean Granite</a></li><li><a href="materials.html">Dekton &amp; Neolith</a></li></ul></div>
+        <div class="footer-column"><h4>Contact</h4><p style="font-size:0.88rem; margin-bottom:8px;"><a href="tel:0771810583">0771 810 583</a></p><p style="font-size:0.88rem;"><a href="mailto:info@vukuzenzele.co.zw">info@vukuzenzele.co.zw</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vukuzenzele Granite Design &bull; Partnered with Mabutho Home Improvement (MHI)</p>
+        <p>Built by <a href="https://hakili.co.zw" target="_blank" rel="noopener noreferrer">hakili.co.zw</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat-theme.js" defer></script>
+  <script src="https://chat.hakili.online/widget.js" data-bot="vukuzenzele" defer></script>
+</body>
+</html>

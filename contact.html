@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Contact | Vukuzenzele Granite Design</title>
+  <meta name="description" content="Contact Vukuzenzele Granite Design and Mabutho Home Improvement (MHI). Call 0771 810 583 or chat via WhatsApp for site measurements.">
+  <link rel="icon" type="image/png" href="assets/images/icon_vg.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Vukuzenzele Granite Design Home">
+        <div class="logo-plaque"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" width="46" height="46"></div>
+        <div class="logo-text"><span class="brand-name">VUKUZENZELE</span><span class="brand-tagline">Granite Design</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="estimator.html" class="btn btn-outline-gold d-none-mobile">Request a Quote</a>
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer" type="button"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <dialog class="Drawer" id="drawer" aria-label="Navigation menu">
+    <div class="Drawer-scroller">
+      <nav class="Drawer-sheet" aria-label="Mobile Navigation">
+        <div class="Drawer-header">
+          <span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span>
+          <button class="Drawer-close" id="drawer-close" type="button" aria-label="Close menu" autofocus>&times;</button>
+        </div>
+        <ul class="Drawer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:24px;"><a href="estimator.html" class="btn btn-primary" style="width:100%;">Request a Quote</a></div>
+      </nav>
+    </div>
+  </dialog>
+
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + env(safe-area-inset-top, 0px) + 48px); padding-bottom:36px;">
+      <div class="container text-center">
+        <div class="eyebrow">Direct Consultation</div>
+        <h1 style="font-size:clamp(2.4rem, 4.5vw, 3.6rem); margin-bottom:16px;">Contact Our Sales Team</h1>
+        <p style="color:var(--slate-muted); max-width:600px; margin:0 auto;">Arrange site templating, inspect raw slabs, or plan joint MHI carpentry &amp; stonework projects.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <div>
+            <h2 style="font-size:2rem; margin-bottom:20px;">Direct Channels</h2>
+            <p style="color:var(--slate-muted); margin-bottom:28px;">Speak with Sales &amp; Marketing Director <strong>Derek Umphile Mafohla</strong> for residential and commercial quotes.</p>
+            <div style="display:grid; gap:18px; margin-bottom:28px;">
+              <div><strong class="text-brass">Phone:</strong> <a href="tel:0771810583">0771 810 583</a></div>
+              <div><strong class="text-brass">WhatsApp:</strong> <a href="https://wa.me/263771810583" target="_blank" rel="noopener noreferrer">+263 77 181 0583</a></div>
+              <div><strong class="text-brass">Email:</strong> <a href="mailto:info@vukuzenzele.co.zw">info@vukuzenzele.co.zw</a></div>
+              <div><strong class="text-brass">Workshop:</strong> Vukuzenzele &amp; Mabutho Home Improvement, Zimbabwe</div>
+            </div>
+          </div>
+
+          <div class="contact-form-panel">
+            <h3 style="font-size:1.75rem; margin-bottom:20px;">Send an Inquiry</h3>
+            <form id="enquiry-form" onsubmit="event.preventDefault(); const n=document.getElementById('contact-name').value; const m=document.getElementById('contact-message').value; window.open('https://wa.me/263771810583?text='+encodeURIComponent('Inquiry from '+n+': '+m), '_blank', 'noopener,noreferrer'); this.reset();">
+              <div class="form-group"><label for="contact-name">Full Name</label><input type="text" id="contact-name" class="form-control" placeholder="e.g. John Moyo" required></div>
+              <div class="form-group"><label for="contact-phone">Phone / WhatsApp</label><input type="tel" id="contact-phone" class="form-control" placeholder="e.g. +263 77 123 4567" required inputmode="tel"></div>
+              <div class="form-group"><label for="contact-type">Project Scope</label>
+                <select id="contact-type" class="form-control">
+                  <option value="countertop">Kitchen Countertops / Slabs</option>
+                  <option value="vanity">Bathroom Vanity Tops</option>
+                  <option value="cladding">Bookmatched Wall Cladding</option>
+                  <option value="joint">MHI Cupboards &amp; Stone Joint Fitting</option>
+                </select>
+              </div>
+              <div class="form-group"><label for="contact-message">Project Details</label><textarea id="contact-message" class="form-control" rows="4" placeholder="Share dimensions or timeline..." required></textarea></div>
+              <button type="submit" class="btn btn-primary" style="width:100%;">Continue on WhatsApp</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrapper"><div class="logo-plaque" style="width:40px; height:40px;"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" loading="lazy"></div><span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span></a>
+          <p>Zimbabwe&rsquo;s premier stone fabricator for Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces.</p>
+        </div>
+        <div class="footer-column"><h4>Services</h4><ul><li><a href="portfolio.html">Kitchen Countertops</a></li><li><a href="portfolio.html">Bathroom Vanities</a></li><li><a href="portfolio.html">Feature Cladding</a></li></ul></div>
+        <div class="footer-column"><h4>Materials</h4><ul><li><a href="materials.html">Quartz &amp; Caesarstone</a></li><li><a href="materials.html">Zimbabwean Granite</a></li><li><a href="materials.html">Dekton &amp; Neolith</a></li></ul></div>
+        <div class="footer-column"><h4>Contact</h4><p style="font-size:0.88rem; margin-bottom:8px;"><a href="tel:0771810583">0771 810 583</a></p><p style="font-size:0.88rem;"><a href="mailto:info@vukuzenzele.co.zw">info@vukuzenzele.co.zw</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vukuzenzele Granite Design &bull; Partnered with Mabutho Home Improvement (MHI)</p>
+        <p>Built by <a href="https://hakili.co.zw" target="_blank" rel="noopener noreferrer">hakili.co.zw</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat-theme.js" defer></script>
+  <script src="https://chat.hakili.online/widget.js" data-bot="vukuzenzele" defer></script>
+</body>
+</html>

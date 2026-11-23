@@ -1,0 +1,145 @@
+/* ==========================================================================
+   Vukuzenzele Granite Design - Design Tokens, Base & Buttons
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+:root {
+  --obsidian: #0b0b0c;
+  --charcoal: #141416;
+  --charcoal-elevated: #1c1c20;
+  --travertine: #ede9e2;
+  --slate-muted: #9a9892;
+  --slate-dim: #66645f;
+  --brass: #c8a46b;
+  --brass-hover: #dfc08d;
+  --brass-muted: rgba(200, 164, 107, 0.14);
+  --stone-border: rgba(237, 233, 226, 0.1);
+  --brass-border: rgba(200, 164, 107, 0.35);
+
+  --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-interactive: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --transition: all 0.35s var(--ease-spring);
+  --transition-fast: all 0.2s var(--ease-interactive);
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --header-height: 78px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--obsidian);
+  color: var(--travertine);
+  line-height: 1.65;
+  overflow-x: clip;
+  min-height: 100dvh;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.12;
+  color: var(--travertine);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition-fast);
+  touch-action: manipulation;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 16px;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding-inline: max(20px, env(safe-area-inset-left), env(safe-area-inset-right));
+}
+
+.section { padding-block: clamp(64px, 8vw, 112px); }
+
+.section-alt {
+  background-color: var(--charcoal);
+  border-top: 1px solid var(--stone-border);
+  border-bottom: 1px solid var(--stone-border);
+}
+
+.text-center { text-align: center; }
+.text-brass { color: var(--brass); }
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--brass);
+  margin-bottom: 16px;
+}
+
+.eyebrow::before {
+  content: '';
+  width: 24px;
+  height: 1px;
+  background: var(--brass);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 46px;
+  padding: 12px 26px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.25s var(--ease-spring), background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--brass); color: var(--obsidian); border: 1px solid var(--brass); }
+.btn-primary:hover { background: var(--brass-hover); border-color: var(--brass-hover); transform: translateY(-2px); }
+.btn-secondary { background: rgba(237, 233, 226, 0.04); color: var(--travertine); border: 1px solid var(--stone-border); }
+.btn-secondary:hover { border-color: var(--travertine); background: rgba(237, 233, 226, 0.08); transform: translateY(-2px); }
+.btn-outline-gold { background: transparent; color: var(--brass); border: 1px solid var(--brass-border); }
+.btn-outline-gold:hover { background: var(--brass-muted); border-color: var(--brass); transform: translateY(-2px); }

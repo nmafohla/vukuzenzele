@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Portfolio | Vukuzenzele Granite Design</title>
+  <meta name="description" content="Completed kitchen countertops, bathroom vanities, bookmatched feature cladding, and MHI joint cabinetry installations in Zimbabwe.">
+  <link rel="icon" type="image/png" href="assets/images/icon_vg.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper" aria-label="Vukuzenzele Granite Design Home">
+        <div class="logo-plaque"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" width="46" height="46"></div>
+        <div class="logo-text"><span class="brand-name">VUKUZENZELE</span><span class="brand-tagline">Granite Design</span></div>
+      </a>
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="estimator.html" class="btn btn-outline-gold d-none-mobile">Request a Quote</a>
+      <button class="menu-toggle" id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="drawer" type="button"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <dialog class="Drawer" id="drawer" aria-label="Navigation menu">
+    <div class="Drawer-scroller">
+      <nav class="Drawer-sheet" aria-label="Mobile Navigation">
+        <div class="Drawer-header">
+          <span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span>
+          <button class="Drawer-close" id="drawer-close" type="button" aria-label="Close menu" autofocus>&times;</button>
+        </div>
+        <ul class="Drawer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="materials.html">Materials</a></li>
+          <li><a href="estimator.html">Price Estimator</a></li>
+          <li><a href="blog.html">Stone Care</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div style="margin-top:auto; padding-top:24px;"><a href="estimator.html" class="btn btn-primary" style="width:100%;">Request a Quote</a></div>
+      </nav>
+    </div>
+  </dialog>
+
+  <main>
+    <section class="section" style="padding-top:calc(var(--header-height) + env(safe-area-inset-top, 0px) + 48px); padding-bottom:36px;">
+      <div class="container text-center">
+        <div class="eyebrow">Completed Works</div>
+        <h1 style="font-size:clamp(2.4rem, 4.5vw, 3.6rem); margin-bottom:16px;">Our Craftsmanship Portfolio</h1>
+        <p style="color:var(--slate-muted); max-width:600px; margin:0 auto;">Precision cutting, bookmatched veining, and integrated MHI carpentry across residential and commercial projects.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header text-center">
+          <div class="eyebrow">Before &amp; After</div>
+          <h2>Joint Workshop Transformation</h2>
+          <p>Drag the divider to see how Mabutho Home Improvement cabinetry meets Vukuzenzele Calacatta marble tops.</p>
+        </div>
+        <div class="before-after-container">
+          <div class="slider-img before-img"><img src="assets/images/media__1785265112057.jpg" alt="MHI Cabinets Before" loading="lazy"><div class="slider-label before-label">Before: MHI Cabinets</div></div>
+          <div class="slider-img after-img"><img src="assets/images/media__1785265112058.jpg" alt="Calacatta Marble Finished" loading="lazy"><div class="slider-label after-label">After: Stonework Finished</div></div>
+          <div class="slider-bar"></div>
+          <div class="slider-handle" role="slider" aria-label="Drag slider" tabindex="0"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="all" type="button">All Slabs</button>
+          <button class="filter-btn" data-filter="kitchen" type="button">Kitchens</button>
+          <button class="filter-btn" data-filter="bathroom" type="button">Bathrooms</button>
+          <button class="filter-btn" data-filter="cladding" type="button">Feature Cladding</button>
+          <button class="filter-btn" data-filter="mhi" type="button">MHI Cupboards</button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265093997.jpg" alt="Slat-Wood Island" loading="lazy"><div class="gallery-hover"><h4>Slat-Wood Island</h4><p>Kitchen &bull; Quartz &amp; Oak</p></div></div>
+          <div class="gallery-item" data-category="cladding" role="button" tabindex="0"><img src="assets/images/media__1785265094003.jpg" alt="Bookmatched Diamond Cladding" loading="lazy"><div class="gallery-hover"><h4>Bookmatched Diamond Cladding</h4><p>Feature Wall &bull; Marble</p></div></div>
+          <div class="gallery-item" data-category="cladding" role="button" tabindex="0"><img src="assets/images/media__1785265128736.jpg" alt="Bespoke Conference Desk" loading="lazy"><div class="gallery-hover"><h4>Bespoke Conference Desk</h4><p>Commercial &bull; Bookmatched</p></div></div>
+          <div class="gallery-item" data-category="bathroom" role="button" tabindex="0"><img src="assets/images/media__1785265093995.jpg" alt="Double Basin Vanity" loading="lazy"><div class="gallery-hover"><h4>Double Basin Vanity</h4><p>Bathroom &bull; Polished Marble</p></div></div>
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265112054.jpg" alt="Hob Integration Island" loading="lazy"><div class="gallery-hover"><h4>Hob Integration Island</h4><p>Kitchen &bull; Minimalist Quartz</p></div></div>
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265112058.jpg" alt="Luxury Calacatta Island" loading="lazy"><div class="gallery-hover"><h4>Luxury Calacatta Island</h4><p>Kitchen &bull; Calacatta Marble</p></div></div>
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265112056.jpg" alt="Calacatta Gold Counters" loading="lazy"><div class="gallery-hover"><h4>Calacatta Gold Counters</h4><p>Kitchen &bull; Marble Backsplash</p></div></div>
+          <div class="gallery-item" data-category="cladding" role="button" tabindex="0"><img src="assets/images/media__1785265112071.jpg" alt="Full Splashback Run" loading="lazy"><div class="gallery-hover"><h4>Full Splashback Run</h4><p>Cladding &bull; Calacatta Marble</p></div></div>
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265093998.jpg" alt="Red Quartz Counters" loading="lazy"><div class="gallery-hover"><h4>Vibrant Red Quartz</h4><p>Kitchen &bull; Engineered Quartz</p></div></div>
+          <div class="gallery-item" data-category="mhi" role="button" tabindex="0"><img src="assets/images/media__1785265128737.jpg" alt="MHI Charcoal Gloss Closets" loading="lazy"><div class="gallery-hover"><h4>MHI Charcoal Gloss Closets</h4><p>Carpentry &bull; MHI</p></div></div>
+          <div class="gallery-item" data-category="mhi" role="button" tabindex="0"><img src="assets/images/media__1785265128738.jpg" alt="MHI Bedroom Wardrobe" loading="lazy"><div class="gallery-hover"><h4>MHI Bedroom Wardrobe</h4><p>Carpentry &bull; Oak &amp; Laminate</p></div></div>
+          <div class="gallery-item" data-category="kitchen" role="button" tabindex="0"><img src="assets/images/media__1785265112057.jpg" alt="Island Under Construction" loading="lazy"><div class="gallery-hover"><h4>Island Substructure</h4><p>Joint MHI &amp; Stone Fitment</p></div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo-wrapper"><div class="logo-plaque" style="width:40px; height:40px;"><img src="assets/images/logo_vukuzenzele.png" alt="Vukuzenzele Logo" loading="lazy"></div><span class="brand-name" style="font-family:var(--font-display); font-size:1.25rem; letter-spacing:0.08em;">VUKUZENZELE</span></a>
+          <p>Zimbabwe&rsquo;s premier stone fabricator for Quartz, Caesarstone, Granite, Marble, Neolith, and Dekton surfaces.</p>
+        </div>
+        <div class="footer-column"><h4>Services</h4><ul><li><a href="portfolio.html">Kitchen Countertops</a></li><li><a href="portfolio.html">Bathroom Vanities</a></li><li><a href="portfolio.html">Feature Cladding</a></li></ul></div>
+        <div class="footer-column"><h4>Materials</h4><ul><li><a href="materials.html">Quartz &amp; Caesarstone</a></li><li><a href="materials.html">Zimbabwean Granite</a></li><li><a href="materials.html">Dekton &amp; Neolith</a></li></ul></div>
+        <div class="footer-column"><h4>Contact</h4><p style="font-size:0.88rem; margin-bottom:8px;"><a href="tel:0771810583">0771 810 583</a></p><p style="font-size:0.88rem;"><a href="mailto:info@vukuzenzele.co.zw">info@vukuzenzele.co.zw</a></p></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Vukuzenzele Granite Design &bull; Partnered with Mabutho Home Improvement (MHI)</p>
+        <p>Built by <a href="https://hakili.co.zw" target="_blank" rel="noopener noreferrer">hakili.co.zw</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/chat-theme.js" defer></script>
+  <script src="https://chat.hakili.online/widget.js" data-bot="vukuzenzele" defer></script>
+</body>
+</html>
