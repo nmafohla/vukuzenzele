@@ -347,7 +347,7 @@ function initEstimator() {
       const minP = document.getElementById('res-min-price')?.textContent || '$0';
       const maxP = document.getElementById('res-max-price')?.textContent || '$0';
       const msg = `Hi Vukuzenzele Granite Design, I calculated an online estimate:\n- Material: ${mat.label}\n- Dimensions: ${length.toFixed(1)}m x ${width.toFixed(1)}m\n- Edge: ${edge.label}\n- Cutouts: ${cutouts}\n- Range: ${minP} - ${maxP} USD`;
-      window.open(`https://wa.me/263771810583?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+      window.open(`https://wa.me/263777441922?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
     }
   });
   prevBtn.addEventListener('click', () => { if (currentStep > 0) { currentStep--; updateStep(); } });
